@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+ <head>
+   <meta charset="UTF-8"content="width=device-width,initil-scale=1.0">
+   <style>
+    body{
+      background-color: #0DC1E0;
+    }
+   #rapadura{
+    margin-top: 50px;
+    width: 500px;
+    height: 560px;
+    border-style: solid;
+    border-color: black;
+    border-width: 2px;
+    transform: translate(500px);
+    border-radius: 3px;
+    background-color: white;
+   }
+   .arroz{
+    border-style: solid;
+    border-color: black;
+    border-width: 2px;
+    width: 200px;
+    height: 30px;
+    transform: translate(140px);
+    margin-top: 20px;
+    border-radius: 20px;
+    text-align: center;
+   }
+   .feijao{
+    transform: translate(140px);
+   }
+   .farinha{
+    border-width: 2px;
+    width: 250px;
+    height: 50px;
+    text-align:center;
+    transition: background-color 0.5s linear;
+    color:black;
+    border-radius: 30px;
+    font-size: 30px;
+
+   }
+   #pizza{
+    width: 500px;
+    height: 100px; 
+    display: inline-flex;
+    margin-top: 24px;
+   }
+   .pao{
+    margin-top: 4px;
+    border-color: white ;
+    border-style: none;
+    text-decoration: none;
+    border-width: 0px;
+    outline: none;
+    margin-top: 0px;
+   }
+   .farinha:hover{
+    background-color: blue;
+   }
+   .sal{
+    color:black;
+    transition: color 0.5s linear;
+   }
+   .sal:hover{
+   color:white
+   }
+   </style>
+   <title>pagina principal</title>
+ </head>
+ <body>
+
+  <form action="" method="POST">
+  <div id="rapadura">
+   <div class="feijao"><label for="nome">nome:</label></div>
+   <div class="arroz"><input class="pao" type="text" name="nome" placeholder="escreva aqui:"required ></div>
+   <div class="feijao"><label for="email">email:</label></div>
+   <div class="arroz" ><input class="pao" type="text" name="email" placeholder="escreva aqui"required></div>
+   <div class="feijao"><label for="emailc">confirmaçao email:</label></div>
+   <div class="arroz"><input class="pao" type="text" name="emailc" placeholder="escreva aqui"required></div>
+   <div class="feijao"><label for="senha">senha:</label></div>
+   <div class="arroz"><input class="pao" type="text" name="senha" placeholder="escreva aqui"required></div>
+   <div class="feijao"><label for="senhac">confirmação da senha:</label></div>
+   <div class="arroz"><input class="pao" type="text" name="senhac" placeholder="escreva aqui"required></div>
+   <label id="label"></label>
+   <p> especificações: a senha precisa estar entre 4 e 10 dijitos, e o nome tendo no maximo 20 digitos</p>
+   <div id="pizza">
+    <div class="farinha"><a  href="#" class="sal">login</a></div>
+    <div class="farinha"><input type="submit" value="cadastre-se"></input></div>
+   </div>
+  </div>
+  </form>
+ </body>
